@@ -1,20 +1,19 @@
 # pyric
 
-My first python package/library 🥚
+Riccardo's first python package/library 🥚
 
 Coded with `Gemini 2.0`
-
 
 ## Installation
 
 ```bash
-pip install pyric
+pip install pyricc
 ```
 
 ## Usage
 
 ```python
-from pyric import colors
+from pyricc import colors
 
 print(colors.to_red("This text is red!"))
 print(colors.to_green("This text is green!"))
