@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyric"
+version = "0.1.0"
+authors = [
+  { name="Riccardo Carlesso", email="pall.adius.bont.on+pyric@googlemail.com" },
+]
+description = "A small library for coloring strings."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/palladius/pyric"
+"Bug Tracker" = "https://github.com/palladius/pyric/issues"
