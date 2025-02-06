@@ -1,12 +1,15 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+#requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "setuptools-scm"] # : Added setuptools-scm as a build-system requirement. This package handles extracting the version.
+
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyric"
-version = "0.1.0"
+name = "pyricc"
+#version = "0.1.0"
+dynamic = ["version"] # Added dynamic
 authors = [
-  { name="Riccardo Carlesso", email="pall.adius.bont.on+pyric@googlemail.com" },
+  { name="Riccardo Carlesso", email="pall.adius.bont.on+pyricc@googlemail.com" },
 ]
 description = "A small library for coloring strings."
 readme = "README.md"
@@ -19,5 +22,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-"Homepage" = "https://github.com/palladius/pyric"
-"Bug Tracker" = "https://github.com/palladius/pyric/issues"
+"Homepage" = "https://github.com/palladius/pyricc"
+"Bug Tracker" = "https://github.com/palladius/pyricc/issues"
+
+
+[tool.setuptools_scm] # Added configuration
+write_to = "src/pyricc/_version.py"

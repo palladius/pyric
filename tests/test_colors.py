@@ -1,5 +1,5 @@
 import unittest
-from pyric import colors
+from pyricc import colors
 
 class TestColors(unittest.TestCase):
 
