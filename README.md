@@ -1,8 +1,6 @@
-# pyric
+# pyricc
 
-Riccardo's first python package/library 🥚
-
-Coded with `Gemini 2.0`
+Riccardo's first python package/library 🥚. Coded with help from `Gemini 2.0`.
 
 ## Installation
 
@@ -21,7 +19,7 @@ print(colors.to_green("This text is green!"))
 
 ## Contributing
 
-See CONTRIBUTING.md (You should create this file later if you want contributions)
+See CONTRIBUTING.md (TBD - You should create this file later if you want contributions).
 
 ## License
 
