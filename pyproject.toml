@@ -1,7 +1,7 @@
 [build-system]
-#requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0"]
 #requires = ["setuptools>=61.0", "setuptools-scm"] # : Added setuptools-scm as a build-system requirement. This package handles extracting the version.
-requires = ["setuptools>=61.0", "setuptools_scm[toml]>=7.0.0"] # Add setuptools_scm
+#requires = ["setuptools>=61.0", "setuptools_scm[toml]>=8.1.0"] # Add setuptools_scm
 build-backend = "setuptools.build_meta"
 
 
@@ -32,11 +32,13 @@ license = {file = "LICENSE"}
 
 
 # Configured to take version from "VERSION" - the Carlessian way.
-[tool.setuptools_scm] # Added configuration
-write_to = "src/pyricc/_version.py"
-version_scheme = "no-guess-dev" # Use the no-guess-dev scheme
-#local_scheme = "no-local-version" # Disable local version part
-local_scheme = "node-and-date" # Recommended for development versions
+# [tool.setuptools_scm] # Added configuration
+# write_to = "src/pyricc/_version.py"
+# # version_scheme = "no-guess-dev" # Use the no-guess-dev scheme
+# # #local_scheme = "no-local-version" # Disable local version part
+# # local_scheme = "node-and-date" # Recommended for development versions
+# version_scheme = "no-guess" # Or "post-release" if you prefer
+# local_scheme = "no-local" # or "node" if you want the commit hash. No local is mandatory to avoid the +
 
-#[tool.setuptools]
-#license-files = []
+[tool.setuptools]
+dynamic = { version = { attr = "pyricc._version.__version__" } }

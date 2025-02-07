@@ -1,3 +1,4 @@
 #!/bin/bash
 
-python -m twine  upload dist/* --verbose
+yellow "Try for verbsoity: python -m twine  upload dist/* --verbose"
+python -m twine  upload dist/*
