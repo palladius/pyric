@@ -1,14 +1,13 @@
 [build-system]
-#requires = ["setuptools>=61.0"]
-#requires = ["setuptools>=61.0", "setuptools-scm"] # : Added setuptools-scm as a build-system requirement. This package handles extracting the version.
-requires = ["setuptools>=61.0", "setuptools_scm[toml]>=8.0"] # Add setuptools_scm
-build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+#requires = ["setuptools>=61.0", "setuptools_scm[toml]>=8.0"] # Add setuptools_scm
+#build-backend = "setuptools.build_meta"
 
 
 [project]
 name = "pyricc"
-#version = "0.1.2"
-dynamic = ["version"] # Added dynamic
+version = "0.1.5"  # manually updated version here
+#dynamic = ["version"] # Added dynamic
 authors = [
   { name="Riccardo Carlesso", email="pall.adius.bont.on+pyricc@googlemail.com" },
 ]
@@ -53,8 +52,12 @@ license = {file = "LICENSE"}
 # local_scheme = "no-local-version"
 # fallback_version = "0.42.42"
 
-[tool.setuptools_scm]
-version_file = "VERSION"  # Tell setuptools_scm to read the version from this file
-version_scheme = "no-guess"
-local_scheme = "no-local-version"
-fallback_version = "0.42.42"
+# [tool.setuptools_scm]
+# version_file = "VERSION"  # Tell setuptools_scm to read the version from this file
+# version_scheme = "no-guess"
+# local_scheme = "no-local-version"
+# fallback_version = "0.42.42"
+
+# [tool.setuptools_scm]
+# fallback_version = "0.42.42"
+# version_file = "VERSION.txt"
