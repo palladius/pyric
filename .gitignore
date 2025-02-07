@@ -136,3 +136,6 @@ dmypy.json
 .vscode/
 
 
+src/pyricc/_version.py
+src/pyricc/_version.py
+src/pyricc/_version.py

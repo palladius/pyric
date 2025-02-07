@@ -1,7 +1,7 @@
 [build-system]
 #requires = ["setuptools>=61.0"]
-requires = ["setuptools>=61.0", "setuptools-scm"] # : Added setuptools-scm as a build-system requirement. This package handles extracting the version.
-#requires = ["setuptools>=61.0", "setuptools_scm[toml]>=8.1.0"] # Add setuptools_scm
+#requires = ["setuptools>=61.0", "setuptools-scm"] # : Added setuptools-scm as a build-system requirement. This package handles extracting the version.
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=8.0"] # Add setuptools_scm
 build-backend = "setuptools.build_meta"
 
 
@@ -47,5 +47,14 @@ license = {file = "LICENSE"}
 #pyricc = ["VERSION"]
 
 # Configure setuptools_scm
+# [tool.setuptools_scm]
+# #version_file = "src/pyricc/_version.py"
+# version_scheme = "no-guess"
+# local_scheme = "no-local-version"
+# fallback_version = "0.42.42"
+
 [tool.setuptools_scm]
-version_file = "src/pyricc/_version.py"
+version_file = "VERSION"  # Tell setuptools_scm to read the version from this file
+version_scheme = "no-guess"
+local_scheme = "no-local-version"
+fallback_version = "0.42.42"
